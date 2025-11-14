@@ -1,0 +1,16 @@
+# netshoot-tool/values.yaml
+
+# Image configuration
+image:
+  repository: nicolaka/netshoot
+  tag: latest
+  pullPolicy: IfNotPresent
+
+# Networking and Security Context configuration (optional but highly recommended for troubleshooting)
+hostNetwork: true
+hostPID: true
+privileged: true
+
+# Other configuration (keep it simple for a troubleshooting tool)
+replicaCount: 1
+
