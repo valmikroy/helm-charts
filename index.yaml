@@ -24,6 +24,15 @@ entries:
   prometheus-avalanche:
   - apiVersion: v2
     appVersion: v0.6.0
+    created: "2025-11-19T05:08:06.397263903Z"
+    description: A simple Helm chart for deploying Prometheus Avalanche
+    digest: 8d9a778e1791f4e8dca10a23062ec13588e733a894e16249d7c91dacd0b66e17
+    name: prometheus-avalanche
+    urls:
+    - https://github.com/valmikroy/helm-charts/releases/download/prometheus-avalanche-0.1.6/prometheus-avalanche-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: v0.6.0
     created: "2025-11-19T05:00:06.023754184Z"
     description: A simple Helm chart for deploying Prometheus Avalanche
     digest: 270272d73652578e3014a3199f2d0a47de1e0a574d21cba2778069a143d45aa7
@@ -76,4 +85,4 @@ entries:
     urls:
     - https://github.com/valmikroy/helm-charts/releases/download/prometheus-avalanche-0.1.0/prometheus-avalanche-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-19T05:00:06.023784501Z"
+generated: "2025-11-19T05:08:06.397302355Z"
