@@ -3,6 +3,16 @@ entries:
   helm-netshoot:
   - apiVersion: v2
     appVersion: "0.14"
+    created: "2025-11-19T04:27:57.586385671Z"
+    description: Netshoot k8s install
+    digest: f8465780d9989a26f92128b83ba9c2ec2174338fd29d597ed12ab579d2c057f2
+    name: helm-netshoot
+    type: application
+    urls:
+    - https://github.com/valmikroy/helm-charts/releases/download/helm-netshoot-0.1.3/helm-netshoot-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: "0.14"
     created: "2025-11-14T20:00:17.127063392Z"
     description: Netshoot k8s install
     digest: 1d2bf347f38864790d67d67873cd1186885b5cd560435e7061f6a1155261dabd
@@ -12,6 +22,15 @@ entries:
     - https://github.com/valmikroy/helm-charts/releases/download/helm-netshoot-0.1.1/helm-netshoot-0.1.1.tgz
     version: 0.1.1
   prometheus-avalanche:
+  - apiVersion: v2
+    appVersion: v0.6.0
+    created: "2025-11-19T04:27:57.726113308Z"
+    description: A simple Helm chart for deploying Prometheus Avalanche
+    digest: 2df14c3cc49472be3796c66f148e9733fbce4b8803097e1c5ec4308d188c4cde
+    name: prometheus-avalanche
+    urls:
+    - https://github.com/valmikroy/helm-charts/releases/download/prometheus-avalanche-0.1.4/prometheus-avalanche-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: v0.6.0
     created: "2025-11-19T03:25:04.947424209Z"
@@ -48,4 +67,4 @@ entries:
     urls:
     - https://github.com/valmikroy/helm-charts/releases/download/prometheus-avalanche-0.1.0/prometheus-avalanche-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-19T03:25:04.947440809Z"
+generated: "2025-11-19T04:27:57.726149405Z"
