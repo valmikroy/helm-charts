@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "helm-hello-world.fullname" . }}
+  name: {{ include "helm-prometheus-avalanche.fullname" . }}
   labels:
-    app: {{ include "helm-hello-world.name" . }}
+    app: {{ include "helm-prometheus-avalanche.name" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "helm-hello-world.name" . }}
+      app: {{ include "helm-prometheus-avalanche.name" . }}
   template:
     metadata:
       labels:
-        app: {{ include "helm-hello-world.name" . }}
+        app: {{ include "helm-prometheus-avalanche.name" . }}
     spec:
       containers:
-        - name: {{ include "helm-hello-world.name" . }}
+        - name: {{ include "helm-prometheus-avalanche.name" . }}
           image: {{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}
           env:
             - name: HELLO_ENV
