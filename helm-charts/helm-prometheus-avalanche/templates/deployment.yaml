@@ -24,9 +24,10 @@ spec:
           {{- range .Values.arguments }}
             - {{ . | quote }}
           {{- end }}
+            - "--port={{ .Values.service.port }}"
           ports:
             - name: http-metrics
-              containerPort: {{ .Values.service.port | default 8000 }}
+              containerPort: {{ .Values.service.port }}
               protocol: TCP
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:

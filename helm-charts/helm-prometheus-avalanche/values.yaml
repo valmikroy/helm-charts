@@ -22,7 +22,6 @@ arguments:
   - "--summary-metric-count=0"
   - "--summary-metric-objective-count=0"
   - "--metric-interval=0"
-  - "--port=8000"
 
 resources:
   requests:
@@ -31,3 +30,6 @@ resources:
   limits:
     cpu: 50m
     memory: 32Mi
+
+service:
+  port: 8000
