@@ -21,9 +21,13 @@ spec:
             - name: HELLO_ENV
               value: "{{ .Values.helloEnv }}"
           args:
-{{- range .Values.arguments }}
+          {{- range .Values.arguments }}
             - {{ . | quote }}
-{{- end }}
+          {{- end }}
+          ports:
+            - name: http-metrics
+              containerPort: {{ .Values.service.port | default 8080 }}
+              protocol: TCP
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
