@@ -1,0 +1,33 @@
+image:
+  repository: quay.io/prometheuscommunity/avalanche
+
+
+# Default values for helm-hello-world
+replicaCount: 3
+
+helloEnv: "hello world"
+
+# Command-line arguments for the container
+# To override or append, modify this list in your custom values file
+arguments:
+  - "--gauge-metric-count=1"
+  - "--counter-metric-count=0"
+  - "--label-count=5"
+  - "--series-count=10"
+  - "--value-interval=10"
+  - "--series-interval=3600"
+  - "--histogram-metric-count=0"
+  - "--histogram-metric-bucket-count=0"
+  - "--native-histogram-metric-count=0"
+  - "--summary-metric-count=0"
+  - "--summary-metric-objective-count=0"
+  - "--metric-interval=0"
+  - "--port=8000"
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 16Mi
+  limits:
+    cpu: 50m
+    memory: 32Mi

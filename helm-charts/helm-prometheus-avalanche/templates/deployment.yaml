@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "helm-hello-world.fullname" . }}
+  labels:
+    app: {{ include "helm-hello-world.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "helm-hello-world.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "helm-hello-world.name" . }}
+    spec:
+      containers:
+        - name: {{ include "helm-hello-world.name" . }}
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}
+          env:
+            - name: HELLO_ENV
+              value: "{{ .Values.helloEnv }}"
+          args:
+{{- range .Values.arguments }}
+            - {{ . | quote }}
+{{- end }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
