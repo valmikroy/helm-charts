@@ -11,4 +11,14 @@ entries:
     urls:
     - https://github.com/valmikroy/helm-charts/releases/download/helm-netshoot-0.1.1/helm-netshoot-0.1.1.tgz
     version: 0.1.1
-generated: "2025-11-14T20:00:17.127069904Z"
+  prometheus-avalanche:
+  - apiVersion: v2
+    appVersion: v0.6.0
+    created: "2025-11-19T02:45:15.393485329Z"
+    description: A simple Helm chart for deploying Prometheus Avalanche
+    digest: d26b0c25cb05d57acd922407509d4ee63b6cbf6bef4e27948bb12fa8032df3cd
+    name: prometheus-avalanche
+    urls:
+    - https://github.com/valmikroy/helm-charts/releases/download/prometheus-avalanche-0.1.0/prometheus-avalanche-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-11-19T02:45:15.39349107Z"
